@@ -14,8 +14,8 @@ function setup() {
     var descarga = select("#descarga");
     descarga.mousePressed(artemania);
     //selecciono el elemento con esta identidad    
-    var gomita = select("#borra");
-    descarga.mousePressed(borrador);
+    var borrador = select("#borrador");
+    borrador.mousePressed(borrador);
     createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
     background("#efebe9");
     elColor = createColorPicker("#000000").parent("controles");
