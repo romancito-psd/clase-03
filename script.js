@@ -7,7 +7,7 @@ function preload() {
 function setup() {
     //transformo el objeto en un arreglo
     elArreglo = Object.values(losDigimon);
-    laPosicion = Math.floor(random(0,elArreglo.length));
+    laPosicion = Math.round(random(0,elArreglo.length));
     console.log(laPosicion);
     createElement("h1", "Dibuja a <a href='"+ elArreglo[laPosicion].img +"' target='_blank'>" + elArreglo[laPosicion].name + "</a>").parent("instruccion");
     //selecciono el elemento con esta identidad
@@ -35,5 +35,5 @@ function artemania() {
 }
 
 function borrador() {
-    background("#eceff1");
+    background("#9B9B9B");
 }
