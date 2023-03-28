@@ -14,8 +14,8 @@ function setup() {
     var descarga = select("#descarga");
     descarga.mousePressed(artemania);
     //selecciono el elemento con esta identidad    
-    var borrador = select("#borrador");
-    borrador.mousePressed(borrador);
+    var descarga = select("#borra");
+    descarga.mousePressed(borrador);
     createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
     background("#efebe9");
     elColor = createColorPicker("#000000").parent("controles");
@@ -31,9 +31,9 @@ function draw() {
 }
 
 function artemania() {
-    saveCanvas("mi_digimon", "jpg");
+    saveCanvas("mi_ave", "jpg");
 }
 
 function borrador() {
-    background("#9B9B9B");
+    background("#eceff1");
 }
