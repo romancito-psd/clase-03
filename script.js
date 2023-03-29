@@ -1,4 +1,7 @@
-var losDigimon, elArreglo, laPosicion, elColor
+var losDigimon 
+var elArreglo
+var laPosicion 
+var elColor
 
 function preload() {
     losDigimon = loadJSON("https://digimon-api.vercel.app/api/digimon");
@@ -14,7 +17,7 @@ function setup() {
     var descarga = select("#descarga");
     descarga.mousePressed(artemania);
     //selecciono el elemento con esta identidad    
-    var descarga = select("#borra");
+    var borra = select("#borra");
     descarga.mousePressed(borrador);
     createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
     background("#efebe9");
